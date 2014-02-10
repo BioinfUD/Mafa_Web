@@ -1,0 +1,9 @@
+<?php
+$caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+$numerodeletras=5;
+$cadena = "";
+for($i=0;$i<$numerodeletras;$i++){
+	$cadena .= substr($caracteres,rand(0,strlen($caracteres)),1);
+}
+echo $cadena;
+?>
