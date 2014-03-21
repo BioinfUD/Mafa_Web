@@ -90,7 +90,9 @@ body{
 </div>
 	</td>
 	<td style="vertical-align: top;padding-left: 25px;border-left: solid 2px gray;">
-		<div id="cont"></div>
+		<div id="cont" style="text-align:justify; width:50%;" >
+			
+		</div>
 	<?php
 	
 	if(!$_POST){
@@ -125,6 +127,8 @@ body{
 					echo '<script>$("#cont").load("gofullanalysis.py.html");</script>';
 				break;
 			}//endswitch()
+		}else{
+		echo '<script>$("#cont").load("welcome.html");</script>';
 		}
 	}else{
 		$link = mysqli_connect(MYSQL_HOST,MYSQL_USER,MYSQL_PASS,MYSQL_DB) or die("Error " . mysqli_error($link));
